@@ -10,9 +10,11 @@
     box-sizing: border-box;
 }
 
+/* Base Logo e Menu*/
 body {
     background: var( --preto);
     font-family: "Times new Roman", sans-serif;
+    color: white;
 }
 
 header .container {
@@ -36,4 +38,48 @@ header nav a {
 
 header nav a:hover{
     color:#FFF
+}
+
+/* Filme Principal*/
+
+
+.atracao-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url("../img/capa-reiLeao.jpg");
+    height: 495px;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.atracao-principal .sinopse {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.atracao-principal .titulo {
+    font-size: 55px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.atracao-principal .botao {
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.atracao-principal .botao i {
+    margin-right: 5px;
+}
+
+.atracao-principal .botao:hover {
+    color: black;
+    background-color: white;
 }
